@@ -181,7 +181,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #f4f4f4; }
 
 ul {
   list-style: none; }
@@ -208,17 +208,17 @@ img {
     display: flex; }
   #main-nav li {
     padding: 1rem 1.5rem; }
-  #main-nav a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s; }
-    #main-nav a:hover {
-      border-color: #ccc; }
-    #main-nav a.current {
-      border-color: #ffbc00; }
+    #main-nav li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s; }
+      #main-nav li a:hover {
+        border-color: #ccc; }
+      #main-nav li a.current {
+        border-color: #ffbc00; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -304,11 +304,12 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw2';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  width: 600px; }
 
 #about-a .bio {
   grid-area: bio;
@@ -321,12 +322,8 @@ img {
 #about-a .award-2 {
   grid-area: aw2; }
 
-#about-a .award-3 {
-  grid-area: aw3; }
-
 #about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
+#about-a .award-2 .fas {
   color: #ffbc00;
   margin: 1rem; }
 
@@ -370,7 +367,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -455,11 +452,11 @@ img {
   #home-a-b .stats div {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-c h1 {
     font-size: 2rem; }
   #main-footer {
