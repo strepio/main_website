@@ -15,9 +15,6 @@
     flex-direction: column;
     align-items: center;
 
-    // a {
-    //   padding-bottom: 0;
-    // }
     li {
       padding: 1rem;
     }
@@ -75,15 +72,19 @@
         'bioimage'
         'bio'
         'aw1'
-        'aw2'
-        'aw3';
+        'aw2';
+        
+        img {
+          width: 100%;
+        }
+        }
       }
     }
 
     &-c {
       display: none;
     }
-  }
+  
 
   // Contact
   #contact {
@@ -115,16 +116,6 @@
       height: 5rem;
     }
   }
-
-  // #about {
-  //   &-c {
-  //     .about-logos {
-  //       display: flex;
-  //       flex-direction: column;
-  //       align-items: center;
-  //     }
-  //   }
-  // }
 }
 
 // Landscape
