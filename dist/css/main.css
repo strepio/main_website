@@ -455,7 +455,7 @@ img {
     grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2'; }
     #about-a .about-info img {
       width: 100%; }
-  -c {
+  #about-c {
     display: none; }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
